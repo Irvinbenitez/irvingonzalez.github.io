@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irvin Gonzalez · Backend · Datos · Ciberseguridad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__logo">IG<span class="nav__logo-dot">_</span></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#sobre-mi"><span class="nav__idx">01</span>Sobre mí</a></li>
+    <li><a href="#habilidades"><span class="nav__idx">02</span>Habilidades</a></li>
+    <li><a href="#contacto"><span class="nav__idx">03</span>Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__grid">
+      <div class="hero__terminal-wrap">
+        <div class="terminal" role="img" aria-label="Terminal simulando el inicio de sesión de Irvin Gonzalez">
+          <div class="terminal__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--gold"></span>
+            <span class="dot dot--outline"></span>
+            <span class="terminal__title">irvin@root: ~</span>
+          </div>
+          <div class="terminal__body" id="terminalBody"></div>
+        </div>
+      </div>
+
+      <div class="hero__text">
+        <p class="eyebrow">// perfil profesional</p>
+        <h1 class="hero__name">Irvin<br>Gonzalez</h1>
+        <p class="hero__role">
+          <span class="role-tag role-tag--gold">Backend</span>
+          <span class="role-tag role-tag--red">Análisis de Datos</span>
+          <span class="role-tag role-tag--outline">Ciberseguridad</span>
+        </p>
+        <p class="hero__desc">
+          Construyo sistemas robustos del lado del servidor, transformo datos en decisiones
+          y protejo la infraestructura que los sostiene. Tres disciplinas, un mismo criterio:
+          que todo funcione, escale y resista.
+        </p>
+        <div class="hero__cta">
+          <a href="#habilidades" class="btn btn--primary">Ver habilidades</a>
+          <a href="#contacto" class="btn btn--ghost">Contactar</a>
+        </div>
+      </div>
+    </div>
+    <a href="#sobre-mi" class="scroll-hint" aria-label="Bajar a la sección Sobre mí">
+      <span class="scroll-hint__line"></span> scroll
+    </a>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section class="about" id="sobre-mi">
+    <p class="section-eyebrow">01 — Sobre mí</p>
+    <div class="about__grid">
+      <h2 class="about__title">
+        Trabajo en la intersección donde el código se encuentra
+        con los datos <span class="hl-gold">y</span> con la seguridad.
+      </h2>
+      <div class="about__body">
+        <p>
+          Soy <strong>Irvin Gonzalez</strong>, desarrollador backend con enfoque en
+          análisis de datos y ciberseguridad. Diseño APIs y arquitecturas de servidor
+          pensadas para durar, extraigo valor de conjuntos de datos complejos y aplico
+          una mentalidad de seguridad ofensiva y defensiva en cada capa del sistema.
+        </p>
+        <p>
+          Para mí, un buen sistema no es solo el que funciona hoy: es el que se puede
+          auditar, escalar y defender mañana.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="skills" id="habilidades">
+    <p class="section-eyebrow">02 — Habilidades</p>
+    <h2 class="skills__title">Stack &amp; competencias</h2>
+
+    <div class="skills__grid">
+
+      <article class="skill-card" data-accent="gold">
+        <div class="skill-card__head">
+          <svg class="skill-card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="6" y="8" width="36" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+            <rect x="6" y="22" width="36" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+            <rect x="6" y="36" width="36" height="4" rx="2" fill="currentColor"/>
+            <circle cx="12" cy="13" r="1.6" fill="currentColor"/>
+            <circle cx="12" cy="27" r="1.6" fill="currentColor"/>
+          </svg>
+          <h3>Backend</h3>
+        </div>
+        <p class="skill-card__desc">APIs, arquitectura de servicios y bases de datos listas para producción.</p>
+        <ul class="bar-list">
+          <li><span class="bar-list__label">Kotlin / Android</span><span class="bar"><span class="bar__fill" data-level="90"></span></span></li>
+          <li><span class="bar-list__label">Python (Django/Flask)</span><span class="bar"><span class="bar__fill" data-level="85"></span></span></li>
+          <li><span class="bar-list__label">SQL / PostgreSQL</span><span class="bar"><span class="bar__fill" data-level="88"></span></span></li>
+          <li><span class="bar-list__label">APIs REST / GraphQL</span><span class="bar"><span class="bar__fill" data-level="92"></span></span></li>
+          <li><span class="bar-list__label">Docker</span><span class="bar"><span class="bar__fill" data-level="80"></span></span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card" data-accent="red">
+        <div class="skill-card__head">
+          <svg class="skill-card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M8 40V26M18 40V16M28 40V22M38 40V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="8" cy="22" r="2.4" fill="currentColor"/>
+            <circle cx="18" cy="12" r="2.4" fill="currentColor"/>
+            <circle cx="28" cy="18" r="2.4" fill="currentColor"/>
+            <circle cx="38" cy="4" r="2.4" fill="currentColor"/>
+          </svg>
+          <h3>Análisis de Datos</h3>
+        </div>
+        <p class="skill-card__desc">De datos crudos a información accionable, con visualización y estadística.</p>
+        <ul class="bar-list">
+          <li><span class="bar-list__label">Python (Pandas/NumPy)</span><span class="bar"><span class="bar__fill" data-level="90"></span></span></li>
+          <li><span class="bar-list__label">SQL avanzado</span><span class="bar"><span class="bar__fill" data-level="88"></span></span></li>
+          <li><span class="bar-list__label">Power BI / Tableau</span><span class="bar"><span class="bar__fill" data-level="78"></span></span></li>
+          <li><span class="bar-list__label">Estadística aplicada</span><span class="bar"><span class="bar__fill" data-level="82"></span></span></li>
+          <li><span class="bar-list__label">ETL / Limpieza de datos</span><span class="bar"><span class="bar__fill" data-level="85"></span></span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card" data-accent="outline">
+        <div class="skill-card__head">
+          <svg class="skill-card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M24 6 L40 12 V22 C40 32 33 39 24 42 C15 39 8 32 8 22 V12 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M18 23 L22 27 L30 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Ciberseguridad</h3>
+        </div>
+        <p class="skill-card__desc">Identificación de vulnerabilidades y defensa de sistemas e infraestructura.</p>
+        <ul class="bar-list">
+          <li><span class="bar-list__label">Pentesting</span><span class="bar"><span class="bar__fill" data-level="80"></span></span></li>
+          <li><span class="bar-list__label">OWASP Top 10</span><span class="bar"><span class="bar__fill" data-level="86"></span></span></li>
+          <li><span class="bar-list__label">Redes / Firewalls</span><span class="bar"><span class="bar__fill" data-level="78"></span></span></li>
+          <li><span class="bar-list__label">Hardening de servidores</span><span class="bar"><span class="bar__fill" data-level="82"></span></span></li>
+          <li><span class="bar-list__label">Criptografía aplicada</span><span class="bar"><span class="bar__fill" data-level="75"></span></span></li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+  <section class="skills__cta">
+    <h1>Insignias Cisco</h1>
+    <div class="skills__badges">
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f804beb3-5f39-477b-b82a-2c027d839c1f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1fdd6d7f-649c-457d-81bc-806be0b28b6b" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="5ff82d02-7e2b-4066-b85a-fd3700cadd44" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="33703212-0038-4866-a4c2-c2c8c6776530" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    </div>
+  </section>
+
+  <section class="skills__cta2">
+    <h1>Insignias Fortinet</h1>
+    <div class="skills__badges">
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4d5b5639-0dd4-4ee2-9d38-3f2cb5b0d46b" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="367e056e-3c1d-404b-ac7c-911df63624fe" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    </div>
+  </section>
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <p class="section-eyebrow">03 — Contacto</p>
+    <h2 class="contact__title">¿Construimos algo <span class="hl-red">seguro</span> y <span class="hl-gold">bien medido</span>?</h2>
+    <p class="contact__desc">Me puedes contactar a través de los siguientes medios:</p>
+
+    <div class="contact__grid">
+      <a class="contact-card" href="mailto:tu-correo@dominio.com">
+        <span class="contact-card__label">Correo</span>
+        <span class="contact-card__value">irvingonzalezsv89@gmail.com</span>
+      </a>
+      <a class="contact-card" href="#" target="_blank" rel="noopener">
+        <span class="contact-card__label">GitHub</span>
+        <span class="contact-card__value">https://github.com/Irvinbenitez</span>
+      </a>
+      <a class="contact-card" href="#" target="_blank" rel="noopener">
+        <span class="contact-card__label">LinkedIn</span>
+        <span class="contact-card__value">https://www.linkedin.com/in/irvingonzalezcybersecurity/</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Irvin Gonzalez — Backend · Análisis de Datos · Ciberseguridad</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
